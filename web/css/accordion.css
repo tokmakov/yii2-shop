@@ -1,0 +1,10 @@
+#accordion {
+    list-style: none;
+    padding-left: 0;
+}
+    #accordion ul {
+        list-style: none;
+    }
+    #accordion .badge {
+        cursor: pointer;
+    }

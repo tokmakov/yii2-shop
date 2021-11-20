@@ -1,0 +1,290 @@
+﻿/* шапка сайта */
+header {
+
+}
+    header > .header-top {
+        background-color: #333;
+    }
+        header > .header-top a {
+            color: #fff;
+        }
+        header > .header-top .nav-pills > li > a {
+            border-radius: 0;
+        }
+        header > .header-top .nav > li > a:hover,
+        header > .header-top .nav > li > a:focus {
+            background-color: #111;
+        }
+    header > .header-middle {
+        margin: 10px 0;
+    }
+        header > .header-middle img {
+            position: relative;
+            top: -2px;
+        }
+        header > .header-middle ul.pull-right {
+            list-style: none;
+            margin-top: 10px;
+        }
+            header > .header-middle ul.pull-right li {
+                float: left;
+                margin-left: 30px;
+            }
+        header > .header-bottom .navbar-default {
+            background-color: transparent;
+            border-color: transparent;
+        }
+        header > .header-bottom .nav > li > a:hover,
+        header > .header-bottom .nav > li > a:focus {
+            background-color: transparent;
+            text-decoration: underline;
+            color: #337ab7;
+        }
+header > .header-bottom {
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+    header > .header-bottom form {
+        padding-top: 4px;
+    }
+
+/* общие стили */
+h1, h2 {
+    color: #696763;
+    font-weight: normal;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 20px;
+}
+
+/* меню страницы сайта */
+#menu {
+
+}
+#menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background: #eee;
+}
+#menu > ul > li {
+    float: left;
+}
+#menu > ul > li > a {
+    border-right: 1px solid #ddd;
+}
+#menu > ul > li:first-child > a {
+    border-left: 1px solid #ddd;
+}
+#menu > ul > li > ul {
+    top: 100%;
+    left: 0;
+}
+#menu li {
+    position: relative;
+}
+#menu a {
+    display: block;
+    white-space: nowrap;
+}
+#menu ul ul {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    min-width: 240px;
+}
+#menu li:hover > ul {
+    visibility: visible;
+}
+#menu:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#menu a {
+    text-decoration: none;
+    color: #337ab7;
+    padding: 10px 25px;
+    line-height: 1.6;
+}
+#menu a:hover {
+    background: #ddd;
+}
+#menu > ul > li > ul > li > a {
+    border-top: 1px solid #ddd;
+    padding: 7px 10px;
+}
+
+/* меню слева */
+.brand-products {
+    
+}
+    .brand-products ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+/* список товаров */
+.product-wrapper {
+    border: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+    .product-image {
+        position: relative;
+        padding: 5px;
+    }
+        .product-image span.new,
+        .product-image span.hit,
+        .product-image span.sale {
+            position: absolute;
+            top: 5px;
+            color: #fff;
+            font-size: 10px;
+            border-radius: 7px;
+            padding: 1px 5px;
+        }
+        .product-image span.new {
+            left: 5px;
+            background: #559955;
+        }
+        .product-image span.hit {
+            left: 33%;
+            background: #eea236;
+        }
+        .product-image span.sale {
+            right: 5px;
+            background: #dd5555;
+        }
+
+/* отдельный товар */
+.product-picture {
+    position: relative;
+    border: 1px solid #eee;
+    padding: 5px;
+}
+    .product-picture span.new,
+    .product-picture span.hit,
+    .product-picture span.sale {
+        position: absolute;
+        top: 5px;
+        color: #fff;
+        font-size: 10px;
+        border-radius: 7px;
+        padding: 1px 5px;
+    }
+    .product-picture span.new {
+        left: 5px;
+        background: #559955;
+    }
+    .product-picture span.hit {
+        left: 33%;
+        background: #eea236;
+    }
+    .product-picture span.sale {
+        right: 5px;
+        background: #dd5555;
+    }
+.product-info {
+
+}
+    .product-info > .product-price {
+        font-size: 20px;
+    }
+        .product-info > .product-price > span {
+            color: #FE980F;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    .product-info > form {
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        padding: 10px 10px 4px 10px;
+        margin-bottom: 15px;
+    }
+        .product-info > form > label {
+            font-weight: normal;
+        }
+        .product-info > form > input {
+            text-align: center;
+            padding: 4px;
+            width: 40px;
+            margin: 0 15px 0 15px;
+            position: relative;
+            top: -2px;
+            border: 1px solid #ddd;
+        }
+        .product-info > form > button {
+            position: relative;
+            top:-3px;
+        }
+.product-descr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.similar-products {
+
+}
+
+/* корзина покупателя */
+#basket-content table tr > th:nth-child(1),
+#basket-modal table tr > th:nth-child(1) {
+    width: 50%;
+}
+#basket-content table tr > th:nth-child(2),
+#basket-modal table tr > th:nth-child(2) {
+    width: 15%;
+}
+#basket-content table tr > th:nth-child(3),
+#basket-modal table tr > th:nth-child(3) {
+    width: 15%;
+}
+#basket-content table tr > th:nth-child(4),
+#basket-modal table tr > th:nth-child(4) {
+    width: 15%;
+}
+#basket-content table tr > th:nth-child(5),
+#basket-modal table tr > th:nth-child(5) {
+    width: 5%;
+}
+
+/* страница оформления заказа */
+#checkout {
+    margin-bottom: 15px;
+}
+
+/* подвал сайта */
+footer {
+    height: 50px;
+    background-color: #333;
+    color: #ccc;
+}
+    footer div {
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+    }
+
+/* Стили для панели управления */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+    fieldset label {
+        font-weight: normal;
+    }
+legend {
+    border-bottom: none;
+    font-size: 1em;
+    margin-bottom: 0;
+    display: inline-block;
+    width: auto;
+    padding: 0 5px;
+    font-weight: bold;
+}
